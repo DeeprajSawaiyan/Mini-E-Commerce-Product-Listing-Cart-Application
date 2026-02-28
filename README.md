@@ -1,16 +1,28 @@
-# React + Vite
+# MyCart - Mini E-Commerce Application 🛒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my mini e-commerce project! This is a frontend web application built to simulate a real online shopping experience. I built this project from scratch to strengthen my understanding of React fundamentals, state management, and API integration.
 
-Currently, two official plugins are available:
+**Live Demo:** [Insert your Vercel link here]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 What Does This App Do?
+- **Browse Products:** Fetches and displays real products (images, prices, and titles) using the Fake Store API.
+- **Search & Filter:** Users can search for specific products by typing the name or filtering by categories like "Electronics" or "Jewelery".
+- **Shopping Cart:** Users can add products to their cart, increase or decrease the quantity, and remove items.
+- **Live Price Calculation:** The cart automatically calculates the total number of items and the final price in Rupees (₹).
+- **Persistent Memory:** If you refresh the page or close the tab, your cart items are saved automatically using the browser's `localStorage`.
 
-## React Compiler
+## 🛠️ Technologies Used
+- **React.js (Vite):** Used to build the user interface with functional components and hooks.
+- **Tailwind CSS:** Used to style the application and make it responsive for mobile and desktop screens.
+- **React Context API:** Used to manage the "global state" of the shopping cart without needing complex external libraries like Redux.
+- **React Router:** Used to navigate smoothly between the Home page and the Cart page without reloading the website.
+- **Axios:** Used to securely fetch data from the external API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 How to Run This Project Locally
 
-## Expanding the ESLint configuration
+If you want to download this code and run it on your own computer, follow these simple steps:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository:**
+   Open your terminal and run:
+   ```bash
+   git clone [https://github.com/DeeprajSawaiyan/Mini-E-Commerce-Product-Listing-Cart-Application.git](https://github.com/DeeprajSawaiyan/Mini-E-Commerce-Product-Listing-Cart-Application.git)
