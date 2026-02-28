@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import { CartProvider } from './hooks/useCart';
 import { Navbar } from './components/Navbar';
-// 1. Import the new page component
-import { ProductListPage } from './pages/ProductListPage'; 
+import { ProductListPage } from './pages/ProductListPage';
+import { CartPage } from './pages/CartPage'; // NEW: Import the Cart Page
 
 function App() {
   return (
@@ -12,10 +12,9 @@ function App() {
 
         <main className="container mx-auto px-4 py-8">
           <Routes>
-            {/* 2. Replace the placeholder with the actual component */}
             <Route path="/" element={<ProductListPage />} />
-            
-            <Route path="/cart" element={<h2>Cart Page (Coming Soon)</h2>} />
+            {/* NEW: Connect the CartPage to the /cart route */}
+            <Route path="/cart" element={<CartPage />} />
           </Routes>
         </main>
       </div>
