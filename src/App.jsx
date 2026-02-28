@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { CartProvider } from './hooks/useCart';
 import { Navbar } from './components/Navbar';
 import { ProductListPage } from './pages/ProductListPage';
-import { CartPage } from './pages/CartPage'; // NEW: Import the Cart Page
+import { CartPage } from './pages/CartPage'; 
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <main className="container mx-auto px-4 py-8">
           <Routes>
             <Route path="/" element={<ProductListPage />} />
-            {/* NEW: Connect the CartPage to the /cart route */}
+            {/* Route the /cart path to your real CartPage */}
             <Route path="/cart" element={<CartPage />} />
           </Routes>
         </main>
