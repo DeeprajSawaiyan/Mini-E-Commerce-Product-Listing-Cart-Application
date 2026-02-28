@@ -3,10 +3,8 @@ import { useCart } from '../hooks/useCart';
 import { CartItem } from '../components/CartItem';
 
 export const CartPage = () => {
-  // Grab the cart array and totals from global state
   const { cart, totalItems, totalPrice } = useCart();
 
-  // SCENARIO 1: Empty Cart
   if (cart.length === 0) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
@@ -16,10 +14,7 @@ export const CartPage = () => {
           </svg>
           <h2 className="text-2xl font-bold text-gray-800 mb-2">Your cart is empty</h2>
           <p className="text-gray-500 mb-8">Looks like you haven't added any items yet.</p>
-          <Link 
-            to="/" 
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors w-full"
-          >
+          <Link to="/" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors w-full">
             Start Shopping
           </Link>
         </div>
@@ -27,13 +22,13 @@ export const CartPage = () => {
     );
   }
 
-  // SCENARIO 2: Cart with items
+  // POPULATED CART UI
   return (
     <div className="max-w-6xl mx-auto">
       <h1 className="text-3xl font-bold text-gray-800 mb-8">Shopping Cart</h1>
       
       <div className="flex flex-col lg:flex-row gap-8">
-        {/* Left Side: List of Cart Items */}
+        {/* Left Side: Items List */}
         <div className="lg:w-2/3 flex flex-col gap-4">
           {cart.map((item) => (
             <CartItem key={item.id} item={item} />
@@ -64,7 +59,7 @@ export const CartPage = () => {
             
             <button 
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition-colors shadow-sm"
-              onClick={() => alert('Checkout functionality would go here!')}
+              onClick={() => alert('Checkout flow goes here!')}
             >
               Proceed to Checkout
             </button>
