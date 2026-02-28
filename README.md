@@ -2,7 +2,7 @@
 
 Welcome to my mini e-commerce project! This is a frontend web application built to simulate a real online shopping experience. I built this project from scratch to strengthen my understanding of React fundamentals, state management, and API integration.
 
-**Live Demo:** [Insert your Vercel link here]
+**Live Demo:** mini-e-commerce-product-listing-car.vercel.app
 
 ## 🌟 What Does This App Do?
 - **Browse Products:** Fetches and displays real products (images, prices, and titles) using the Fake Store API.
