@@ -8,7 +8,7 @@ Welcome to my mini e-commerce project! This is a frontend web application built 
 - **Browse Products:** Fetches and displays real products (images, prices, and titles) using the Fake Store API.
 - **Search & Filter:** Users can search for specific products by typing the name or filtering by categories like "Electronics" or "Jewelery".
 - **Shopping Cart:** Users can add products to their cart, increase or decrease the quantity, and remove items.
-- **Live Price Calculation:** The cart automatically calculates the total number of items and the final price in Rupees (₹).
+- **Live Price Calculation:** The cart automatically calculates the total number of items and the final price in Dollar ($).
 - **Persistent Memory:** If you refresh the page or close the tab, your cart items are saved automatically using the browser's `localStorage`.
 
 ## 🛠️ Technologies Used
